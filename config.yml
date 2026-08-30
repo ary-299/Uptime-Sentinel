@@ -1,12 +1,12 @@
 Servers:
   Server1:
-    Name:"Youtube"
-    IP:https://www.youtube.com/
+    Name: "Youtube"
+    IP: https://www.youtube.com/
   Server2:
-    Name:"Google"
-    IP:https://www.google.com/
+    Name: "Google"
+    IP: https://www.google.com/
   Server3:
-    Name:"osu!"
-    IP:https://osu.ppy.sh/
+    Name: "osu!"
+    IP: https://osu.ppy.sh/
 Settings:
   Ping_swiftness_in_s:1
