@@ -8,5 +8,5 @@ Servers:
   Server3:
     Name: "osu!"
     IP: https://osu.ppy.sh/
-Settings:
-  Ping_swiftness_in_s:1
+settings:
+  ping_swiftness_in_s: 1
