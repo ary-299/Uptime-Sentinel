@@ -1,12 +1,49 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # PLEASE READ BEFORE EDITING# # # # # # # # # # # # # # # # # # # # #
+#                                                                                                                   #    
+#                    Please watch out for the following things that might throw errors:                             #
+#                                                                                                                   #
+# - Leave a space after every semicolon (ex: Name: "Youtube")                                                       #
+# - Keep the format exactly as it is when adding new websites (Server x, Name, IP, color)                           #
+# - In a YAML, the spaces to the left are very important. Please watch out for the spacing at the left so the file  #
+# wont break the code.                                                                                              #
+# - Add Code unterneath the "Servers header" only. Do NOT add code under the settings tab, this is for editing only.#
+#                                                                                                                   #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
 Servers:
   Server1:
     Name: "Youtube"
     IP: https://www.youtube.com/
+    color: RED
   Server2:
     Name: "Google"
     IP: https://www.google.com/
+    color: GREEN
   Server3:
     Name: "osu!"
     IP: https://osu.ppy.sh/
+    color: MAGENTA
 settings:
   ping_swiftness_in_s: 1
+  good_ping: 700                  #If the ping is under the "good ping" value, the ping number will be green. If the value is between good and bad
+  bad_ping: 1000                  #If the value is above bad, itll be displayed as red. Please remember: Good is a maximum value and bad is a minumum worth
+
+
+# # # # # # # # # Colors to chose from for the server color. Please make sure the color name is always All caps. # # # # # # #
+
+#"BLACK": colorama.Fore.BLACK,                      -> Black
+#"RED": colorama.Fore.RED,                          -> Red
+#"GREEN": colorama.Fore.GREEN,                      -> Green
+#"YELLOW": colorama.Fore.YELLOW,                    -> Yellow
+#"BLUE": colorama.Fore.BLUE,                        -> Blue
+#MAGENTA": colorama.Fore.MAGENTA,                   -> Magenta
+#"CYAN": colorama.Fore.CYAN,                        -> Cyan
+#"WHITE": colorama.Fore.WHITE,                      -> White
+#"LIGHTBLACK": colorama.Fore.LIGHTBLACK_EX,      -> Lightblack
+#"LIGHTRED": colorama.Fore.LIGHTRED_EX,          -> Lightred
+#"LIGHTGREEN": colorama.Fore.LIGHTGREEN_EX,      -> Lightgreen
+#"LIGHTYELLOW": colorama.Fore.LIGHTYELLOW_EX,    -> Lightyellow
+#"LIGHTBLUE": colorama.Fore.LIGHTBLUE_EX,        -> Lightblue
+#"LIGHTMAGENTA": colorama.Fore.LIGHTMAGENTA_EX,  -> Lightmagenta
+#"LIGHTCYAN": colorama.Fore.LIGHTCYAN_EX,        -> Lightcyan
+#"LIGHTWHITE": colorama.Fore.LIGHTWHITE_EX,      -> Lightwhite
