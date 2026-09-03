@@ -12,17 +12,14 @@
 
 Servers:
   Server1:
-    Name: "Youtube"
-    IP: https://www.youtube.com/
-    color: RED
+    Name: "Keeeks core"
+    IP: https://Keeeks.de/
+    color: YELLOW
   Server2:
-    Name: "Google"
-    IP: https://www.google.com/
-    color: GREEN
-  Server3:
-    Name: "osu!"
-    IP: https://osu.ppy.sh/
-    color: MAGENTA
+    Name: "Keeeks dev"
+    IP: https://team.keeeks.dev/
+    color: LIGHTRED
+
 settings:
   ping_swiftness_in_s: 1
   good_ping: 700                  #If the ping is under the "good ping" value, the ping number will be green. If the value is between good and bad
