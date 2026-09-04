@@ -2,6 +2,7 @@ import time
 import requests
 import yaml
 import colorama
+import msvcrt
 
 colorama.init()
 
@@ -72,11 +73,13 @@ def server_ping():
                     
                 raw_color = server_data.get("color", "WHITE")
                 color_web = COLOR_MAP.get(str(raw_color), colorama.Fore.WHITE)
-
-                # Use normal newlines per row now that we manage the block jump via \033[A
                 print(f"{color_web}{name}{colorama.Style.RESET_ALL} | {colorama.Fore.GREEN}{url}{colorama.Style.RESET_ALL} | {ping_color}{status}{colorama.Style.RESET_ALL}                           ")
                 print(f"{colorama.Fore.LIGHTBLACK_EX}###################################################################{colorama.Style.RESET_ALL}")
+                print(f"{colorama.Fore.RED}PRESS ANY KEY TO RETURN TO MAIN MENU", {colorama.Style.RESET_ALL})
 
+                if msvcrt.kbhit():
+                    key = msvcrt.getch()
+                    print("Key detected, returning to main menu...")
             time.sleep(ping_swiftness) 
 
     except KeyboardInterrupt:

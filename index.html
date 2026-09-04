@@ -1,0 +1,42 @@
+<!--FULLY AI GENERATED CODE-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uptime Sentinel Mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Persistent Top Lane -->
+    <div id="topLane" class="top-lane">
+        <span id="userIp">IP: Loading...</span>
+        <div class="center-controls">
+            <button id="toggleGraphBtn">📊 Ping Graph</button>
+            <button id="toggleMiniListBtn">📋 Mini List</button>
+        </div>
+        <button id="hideLaneBtn" class="arrow-btn">▲</button>
+    </div>
+
+    <!-- Show Lane Button (Visible when top lane is hidden) -->
+    <button id="showLaneBtn" class="arrow-down-btn hidden">▼</button>
+
+    <!-- Start Screen / Main Container -->
+    <main class="container">
+        <!-- Start Button -->
+        <button id="startBtn" class="start-button">Start monitoring servers!</button>
+
+        <!-- Content Area (Slides in after click) -->
+        <div id="contentArea" class="content-area hidden">
+            <h2>Monitored Servers</h2>
+            <div id="serverList">
+                <!-- Dynamically populated server items -->
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

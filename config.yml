@@ -16,9 +16,9 @@ Servers:
     IP: https://Keeeks.de/
     color: YELLOW
   Server2:
-    Name: "Keeeks dev"
-    IP: https://team.keeeks.dev/
-    color: LIGHTRED
+    Name: "Youtube"
+    IP: https://youtube.com/
+    color: RED
 
 settings:
   ping_swiftness_in_s: 1
